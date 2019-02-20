@@ -18,8 +18,8 @@
 	{
 		"location": "",
 		"clue_1": " On the right",
-		"clue_2": " No�left",
-		"clue_3": " Wait�right",
+		"clue_2": " No-left",
+		"clue_3": " Wait-right",
 		"solution": " Peckpocket",
 		"effect": ""
 	}
