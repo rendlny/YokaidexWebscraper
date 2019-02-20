@@ -6,16 +6,14 @@ def addBaffleBoardToFile(baffleBoard, filename):
     f.write(baffleBoard.json())
     return "added"
 
+def addFishToJsonFile(fish, filename):
+    f = open(filename, "a")
+    f.write(fish.json())
+    return "added"
+
 def changeSpacesToHtml(url):
     html = url.replace(" ","%20")
     return html
-
-def getViewingInfoFromScripts(text):
-    contents = text.split("strong")
-    contents = contents[2]
-    contents = contents[105:]
-    contents = contents[:14]
-    return contents
 
 def getDirectionsFromScripts(text):
     contents = text.split("Directions")

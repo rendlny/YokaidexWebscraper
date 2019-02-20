@@ -67,3 +67,7 @@ class Fish:
     def display(self):
         msg =  'Name: ' + self.name + ', Location: ' + self.location + ', Time: ' + self.time + ', Rarity: ' + self.rarity + ', Buy: ' + self.buy + ', Sell: ' + self.sell + ', Rare Sell: ' + self.rare_sell
         return msg
+
+    def json(self):
+        json =  '{\n\t"name":"' + self.name + '", "location":"' + self.location + '", "time":"' + self.time + '", "rarity":"' + self.rarity + '", "buy":"' + self.buy + '", "sell":"' + self.sell + '", "rare_sell":"' + self.rare_sell + '"\n},\n'
+        return json
