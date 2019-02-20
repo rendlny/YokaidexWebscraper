@@ -1,4 +1,5 @@
-[{
+[
+	{
 		"location": " Northbeech Pizzeria (Story Mode)",
 		"clue_1": " In the Shady tribe",
 		"clue_2": " Always angry",
@@ -198,5 +199,5 @@
 	"location":"", "clue_1":" Not in the left row of trees", "clue_2":" Not in the middle tree", "clue_3":" Not the tree on the corner", "solution":" Cadin", "effect":""
 },
 {
-	"location":"", "clue_1":" On the right", "clue_2":" No—left", "clue_3":" Wait—right", "solution":" Peckpocket", "effect":""
+	"location":"", "clue_1":" On the right", "clue_2":" Noï¿½left", "clue_3":" Waitï¿½right", "solution":" Peckpocket", "effect":""
 },
