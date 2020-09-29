@@ -1,4 +1,4 @@
-import urllib.request
+addObjectJsonToFileimport urllib.request
 from bs4 import BeautifulSoup
 from assets import data
 from assets import functions
@@ -39,4 +39,4 @@ for row in tableRows:
     print('--------------------')
     bug = Bug(bugName.rstrip(), bugLocation.rstrip(), '', bugSell.rstrip(), bugRareSell.rstrip())
 
-    functions.addObjectJsonToFile(bug, "bug_1.js")
+    functions.addObjectJsonToFile(bug, "bug_1.json")

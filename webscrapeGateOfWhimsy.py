@@ -45,5 +45,5 @@ for row in tableRows:
         #print('Location: ' + location + ', Clue 1: ' + clue_1 + ', Clue 2: ' + clue_2 + ', Clue 3: ' + clue_3 + ', Solution: ' + solution + ', Effect: ' + effect)
         baffleBoard = BaffleBoard( '', clue_1.rstrip(), clue_2.rstrip(), clue_3.rstrip(), solution.rstrip(), '')
 
-        test = functions.addObjectJsonToFile(baffleBoard, "baffleBoard3.js")
+        test = functions.addObjectJsonToFile(baffleBoard, "baffleBoard3.json")
         print(test)

@@ -45,4 +45,4 @@ for row in tableRows:
         print( '-------' )
 
         fish = Fish(fishName.rstrip(), fishLocation.rstrip(), '', '', fishBuy.rstrip(), fishSell.rstrip(), fishRareSell.rstrip())
-        functions.addObjectJsonToFile(fish, "fish_1.js")
+        functions.addObjectJsonToFile(fish, "fish_1.json")
