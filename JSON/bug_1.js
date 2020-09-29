@@ -118,25 +118,3 @@
 		"rare_sell": "2.82"
 	}
 ]
-	{
-		"name":"Ladybug (YW1)", "location":"Found sometimes in any kind of bush.", "description":"", "sell":"0.60", "rare_sell":"1.20"
-	},
-	{
-		"name":"Locust (YW1)", "location":"Found wherever there are bushes.", "description":"", "sell":"2.22", "rare_sell":"4.44"
-	},
-	{
-		"name":"Long-Horn (YW1)", "location":"Found in various trees.", "description":"", "sell":"1.68", "rare_sell":"3.36"
-	},
-	{
-		"name":"Praying Mantis (YW1)", "location":"Found sometimes wherever there are bushes.", "description":"", "sell":"1.83", "rare_sell":"3.66"
-	},
-	{
-		"name":"Rhino Beetle (YW1)", "location":"Found rarely in the trees of Mt. Wildwood and trees elsewhere. Easier to find at night.", "description":"", "sell":"15.00", "rare_sell":"30.00"
-	},
-	{
-		"name":"Sawtooth Stag (YW1)", "location":"Found rarely in the trees of Mt. Wildwood and trees elsewhere. Easier to find at night.", "description":"", "sell":"5.40", "rare_sell":"10.80"
-	},
-	{
-		"name":"Swallowtail (YW1)", "location":"Found sometimes in the trees around town. Easier to find during the day.", "description":"", "sell":"1.41", "rare_sell":"2.82"
-	}
-]

@@ -1,6 +1,1 @@
-Python
-Download Python ( https://www.python.org/ )
------------------------------------------------------------------
-$ pip list
-pip install:
-BeautifulSoup (4.6.0) / beautifulsoup4
+beautifulsoup4
