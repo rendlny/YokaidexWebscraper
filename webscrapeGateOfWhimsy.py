@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 from DAO import Data
 import functions
 
-from DTO.BaffleBoard import BaffleBoard
+from models.BaffleBoard import BaffleBoard
 
-page = functions.scrapeUrl(Data.WEB_LINK)
+page = functions.scrape_url(Data.WEB_LINK)
 tableHead = page.find('span', {"id": "Gate_of_Whimsy:_Quiz_Room_Baffle_Boards"})
 table = tableHead.find_parent().find_next_sibling()
 tableRows = table.find_all('tr')
@@ -45,5 +45,5 @@ for row in tableRows:
         #print('Location: ' + location + ', Clue 1: ' + clue_1 + ', Clue 2: ' + clue_2 + ', Clue 3: ' + clue_3 + ', Solution: ' + solution + ', Effect: ' + effect)
         baffleBoard = BaffleBoard( '', clue_1.rstrip(), clue_2.rstrip(), clue_3.rstrip(), solution.rstrip(), '')
 
-        test = functions.addObjectJsonToFile(baffleBoard, "baffleBoard3.json")
+        test = functions.add_object_json_to_file(baffleBoard, "baffleBoard3.json")
         print(test)

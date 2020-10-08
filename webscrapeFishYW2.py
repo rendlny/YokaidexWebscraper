@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 from assets import data
 from assets import functions
 
-from DTO.Fish import Fish
+from models.Fish import Fish
 
-page = functions.scrapeUrl(data.WEB_FISH_LINK)
+page = functions.scrape_url(data.WEB_FISH_LINK)
 table = page.find('table', {"class": "wikitable"})
 
 tableRows = table.find_all('tr')
@@ -52,4 +52,4 @@ for row in tableRows:
         print( '-------' )
 
         fish = Fish(fishName.rstrip(), fishLocation.rstrip(), fishTime.rstrip(), fishRarity.rstrip(), fishBuy.rstrip(), fishSell.rstrip(), fishRareSell.rstrip())
-        functions.addObjectJsonToFile(fish, "fish.json")
+        functions.add_object_json_to_file(fish, "fish.json")

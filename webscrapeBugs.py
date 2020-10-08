@@ -1,12 +1,12 @@
-addObjectJsonToFileimport urllib.request
+add_object_json_to_fileimport urllib.request
 from bs4 import BeautifulSoup
 from assets import data
 from assets import functions
 
-from DTO.Bug import Bug
+from models.Bug import Bug
 
 
-page = functions.scrapeFile("bug_html.html")
+page = functions.scrape_file("bug_html.html")
 tableHead = page.find('span', {"id": "Yo-kai_Watch_1"})
 table = tableHead.find_parent().find_next_sibling()
 tableRows = table.find_all('tr')
@@ -39,4 +39,4 @@ for row in tableRows:
     print('--------------------')
     bug = Bug(bugName.rstrip(), bugLocation.rstrip(), '', bugSell.rstrip(), bugRareSell.rstrip())
 
-    functions.addObjectJsonToFile(bug, "bug_1.json")
+    functions.add_object_json_to_file(bug, "bug_1.json")

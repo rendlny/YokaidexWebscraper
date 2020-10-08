@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 from assets import data
 from assets import functions
 
-from DTO.BaffleBoard import BaffleBoard
+from models.BaffleBoard import BaffleBoard
 
-page = functions.scrapeUrl(data.WEB_LINK)
+page = functions.scrape_url(data.WEB_LINK)
 tableHead = page.find('span', {"id": "Yo-kai_Watch_3"})
 table = tableHead.find_parent().find_next_sibling()
 tableRows = table.find_all('tr')
@@ -51,5 +51,5 @@ for row in tableRows:
         #print('Location: ' + location + ', Clue 1: ' + clue_1 + ', Clue 2: ' + clue_2 + ', Clue 3: ' + clue_3 + ', Solution: ' + solution + ', Effect: ' + effect)
         baffleBoard = BaffleBoard( location.rstrip(), clue_1.rstrip(), clue_2.rstrip(), clue_3.rstrip(), solution.rstrip(), effect.rstrip())
 
-        test = functions.addObjectJsonToFile(baffleBoard, "test.json")
+        test = functions.add_object_json_to_file(baffleBoard, "test.json")
         print(test)
